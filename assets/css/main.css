@@ -20,7 +20,8 @@
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
+  --default-color:#fff ;
+  /* #444444 change; Default color used for the majority of the text content across the entire website */
   --heading-color: #222222; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #34b7a7; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -29,7 +30,8 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #444444;  /* The default color of the main navmenu links */
+  --nav-color:#fff ;
+  /* #444444 chanege) The default color of the main navmenu links */
   --nav-hover-color: #34b7a7; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -40,8 +42,11 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #e9e8e6;
+  --background-color: #00274c;
   --surface-color: #ffffff;
+/* 
+  #e9e8e6 change */
+  
 }
 
 .dark-background {
@@ -167,7 +172,7 @@ h6 {
   margin: 0;
   font-weight: 300;
   text-transform: uppercase;
-  color: var(--heading-color);
+  color: #fff;
 }
 
 .header .header-social-links {
@@ -478,6 +483,7 @@ h6 {
 
 .footer .copyright p {
   margin-bottom: 0;
+  color: white;
 }
 
 .footer .social-links {
@@ -780,6 +786,7 @@ section,
   margin-bottom: 20px;
   display: flex;
   align-items: center;
+  color: black;
 }
 
 .about .content ul strong {
@@ -791,6 +798,7 @@ section,
   margin-right: 5px;
   color: var(--accent-color);
   line-height: 0;
+  
 }
 
 /*--------------------------------------------------------------
@@ -819,7 +827,7 @@ section,
 }
 
 .skills .progress-bar-wrap {
-  background: color-mix(in srgb, var(--default-color), transparent 90%);
+  background: color-mix(in srgb, black, transparent 90%);
   height: 10px;
 }
 
@@ -975,7 +983,9 @@ section,
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
+p{
+  color: #444444;
+}
 .resume .resume-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
@@ -988,7 +998,7 @@ section,
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, black, transparent 20%);
   margin-bottom: 10px;
 }
 
@@ -1006,6 +1016,7 @@ section,
 
 .resume .resume-item ul li {
   padding-bottom: 10px;
+  color: #444444;
 }
 
 .resume .resume-item:last-child {
@@ -1368,10 +1379,12 @@ section,
 }
 
 .contact .php-email-form {
-  background-color: var(--surface-color);
+  background-color: rgb(78, 78, 83);
   height: 100%;
   padding: 30px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
 }
 
 @media (max-width: 575px) {
@@ -1387,7 +1400,7 @@ section,
   padding: 10px 15px;
   box-shadow: none;
   border-radius: 0;
-  color: var(--default-color);
+  color: black;
   background-color: var(--surface-color);
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
